@@ -4,7 +4,7 @@ import logoImg from "../assets/logo.png";
 import { Link } from "react-router";
 export default function Nav() {
   return (
-    <nav className="grid grid-cols-5">
+    <nav className="grid grid-cols-5 showme">
       <div className="col-span-full md:col-span-2 lg:col-span-1 flex items-center relative p-3">
         <IoMenuOutline className="text-2xl cursor-pointer lg:hidden" />
         <Link
@@ -17,9 +17,15 @@ export default function Nav() {
 
       <div className="hidden lg:block lg:col-span-2">
         <ul className="flex flex-row justify-between *:font-poppins-regular font-semibolc p-3">
-          <Link to="/find-your-job">Find your next job</Link>
-          <Link to="/find-your-hire">Find your next hire</Link>
-          <Link to="/about-us">About</Link>
+          <Link className="after-line" to="/find-your-job">
+            Find your next job
+          </Link>
+          <Link className="after-line" to="/find-your-hire">
+            Find your next hire
+          </Link>
+          <Link className="after-line" to="/about-us">
+            About
+          </Link>
         </ul>
       </div>
 
