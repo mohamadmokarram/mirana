@@ -1,5 +1,10 @@
+import { createBrowserRouter, RouterProvider } from "react-router";
+import HomePage from "./pages/home";
+
+const router = createBrowserRouter([{ path: "/", element: <HomePage /> }]);
+
 function App() {
-  return <div className="text-3xl text-center">Mira project starting...</div>;
+  return <RouterProvider router={router} />;
 }
 
 export default App;

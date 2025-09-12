@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "poppins-extraLight";
+  src: url("/public/fonts/poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "poppins-regular";
+  src: url("/public/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@theme {
+  --font-poppins-extraLight: "poppins-extraLight";
+  --font-poppins-regular: "poppins-regular";
+}
+
+@layer components {
+  .showme {
+    @apply outline outline-amber-400;
+  }
+}
