@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "poppins-extraLight";
+  src: url("/public/fonts/poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "poppins-regular";
+  src: url("/public/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@theme {
+  --font-poppins-extraLight: "poppins-extraLight";
+  --font-poppins-regular: "poppins-regular";
+}
+
+@layer components {
+  .container {
+    @apply mx-auto;
+  }
+  .showme {
+    @apply outline outline-amber-400;
+  }
+  .after-line {
+    &::after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 2px;
+      margin: 0 auto;
+      margin-top: 2px;
+      background: #424242;
+      border-radius: 5px;
+      transition-duration: 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
