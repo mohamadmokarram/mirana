@@ -15,6 +15,9 @@
 }
 
 @layer components {
+  .container {
+    @apply mx-auto;
+  }
   .showme {
     @apply outline outline-amber-400;
   }
