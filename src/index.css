@@ -8,10 +8,15 @@
   font-family: "poppins-regular";
   src: url("/public/fonts/poppins/Poppins-Regular.ttf");
 }
+@font-face {
+  font-family: "poppins-bold";
+  src: url("/public/fonts/poppins/Poppins-Bold.ttf");
+}
 
 @theme {
   --font-poppins-extraLight: "poppins-extraLight";
   --font-poppins-regular: "poppins-regular";
+  --font-poppins-bold: "poppins-bold";
 }
 
 @layer components {
