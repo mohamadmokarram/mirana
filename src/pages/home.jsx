@@ -1,9 +1,13 @@
+import HomeHeader from "../components/homeHeader";
 import Nav from "../components/Nav";
 
 function HomePage() {
   return (
     <>
-      <Nav />
+      <section className="h-screen flex flex-col">
+        <Nav />
+        <HomeHeader />
+      </section>
     </>
   );
 }
