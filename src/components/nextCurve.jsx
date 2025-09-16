@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 export default function NextCurve() {
   return (
     <section className="flex flex-col gap-8 lg:gap-0 bg-[#0f1b38] lg:flex-row">
-      <article className="lg:w-1/2 *:text-slate-200 overflow-hidden border-r border-slate-400">
+      <article className="lg:w-1/2 *:text-slate-200 overflow-hidden sm:border-b lg:border-b-0 lg:border-r border-slate-400 pb-10">
         <h2 className="h-20 flex justify-center items-center text-center font-poppins-bold my-6 text-4xl lg:text-5xl">
           The next curve
         </h2>
@@ -63,7 +63,7 @@ export default function NextCurve() {
       </article>
 
       {/* second article */}
-      <article className="lg:w-1/2 *:text-slate-200 overflow-hidden">
+      <article className="lg:w-1/2 *:text-slate-200 overflow-hidden pb-10">
         <h2 className="h-20 text-center font-poppins-bold my-6 text-4xl lg:text-5xl lg:w-2/3 lg:mx-auto">
           Grow with confidence
         </h2>
