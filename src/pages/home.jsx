@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import HomeHeader from "../components/homeHeader";
 import Nav from "../components/Nav";
 import NextCurve from "../components/nextCurve";
@@ -12,6 +13,7 @@ function HomePage() {
       </section>
       <NextCurve />
       <Partners />
+      <Footer />
     </>
   );
 }

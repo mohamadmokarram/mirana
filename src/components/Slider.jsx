@@ -9,6 +9,7 @@ export default function Slider() {
   return (
     <Swiper
       className="!px-4 mb-10 lg:w-2/3"
+      simulateTouch={true}
       loop={true}
       modules={[Autoplay]}
       autoplay={{
@@ -25,7 +26,7 @@ export default function Slider() {
       {PARTNERS.map(item => (
         <SwiperSlide key={item.id}>
           <div className="flex justify-center items-center">
-            <img src={item.img} alt="business" />
+            <img src={item.img} alt="business" className="" />
           </div>
         </SwiperSlide>
       ))}
