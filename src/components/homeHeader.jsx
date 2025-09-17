@@ -4,7 +4,7 @@ import headerImg from "../assets/smile.png";
 
 export default function HomeHeader() {
   return (
-    <header className="grow flex flex-col lg:flex-row mt-4">
+    <header className="grow flex flex-col lg:flex-row mt-12">
       <section className="lg:w-1/2 flex flex-col p-4">
         <h1 className="text-center md:text-left font-poppins-bold font-bold text-4xl md:text-8xl mt-4">
           We make recruitment happen
