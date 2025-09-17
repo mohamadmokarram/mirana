@@ -7,10 +7,7 @@ export default function Nav() {
     <nav className="grid grid-cols-5 showme">
       <div className="col-span-full md:col-span-2 lg:col-span-1 flex items-center relative p-3">
         <IoMenuOutline className="text-2xl cursor-pointer lg:hidden" />
-        <Link
-          className="absolute left-1/2 transform -translate-x-1/2"
-          to="/"
-          end>
+        <Link className="absolute left-1/2 transform -translate-x-1/2" to="/">
           <img src={logoImg} alt="mirana" />
         </Link>
       </div>

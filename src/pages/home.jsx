@@ -1,3 +1,4 @@
+import FindNext from "../components/FindNext";
 import Footer from "../components/Footer";
 import HomeHeader from "../components/homeHeader";
 import Nav from "../components/Nav";
@@ -13,6 +14,7 @@ function HomePage() {
       </section>
       <NextCurve />
       <Partners />
+      <FindNext />
       <Footer />
     </>
   );
