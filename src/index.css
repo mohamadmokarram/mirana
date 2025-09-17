@@ -17,6 +17,7 @@
   --font-poppins-extraLight: "poppins-extraLight";
   --font-poppins-regular: "poppins-regular";
   --font-poppins-bold: "poppins-bold";
+  --color-secondary: #0f1b38;
 }
 
 @layer components {
