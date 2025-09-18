@@ -22,7 +22,7 @@
 
 @layer components {
   .container {
-    @apply mx-auto;
+    @apply mx-auto max-w-[1024px];
   }
   .showme {
     @apply outline outline-amber-400;
