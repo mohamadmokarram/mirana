@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import logoImg from "../assets/logo.png";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { RiTwitterXFill } from "react-icons/ri";
+
+import SocialIcons from "./SocialIcons";
 
 export default function Footer() {
   return (
@@ -20,17 +20,7 @@ export default function Footer() {
             <p className="text-slate-400 text-center"> © 2023 Mirana </p>
           </div>
 
-          <div className="flex justify-center p-3 *:text-2xl gap-3 text-slate-500 mt-4 md:mt-0">
-            <Link>
-              <FaLinkedinIn />
-            </Link>
-            <Link>
-              <RiTwitterXFill />
-            </Link>
-            <Link>
-              <FaInstagram />
-            </Link>
-          </div>
+          <SocialIcons classes="justify-center mt-4 md:mt-0" />
         </div>
 
         <p className="text-slate-500 text-center text-[13px]">
