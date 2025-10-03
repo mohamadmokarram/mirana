@@ -2,12 +2,13 @@ import { Link } from "react-router";
 import SocialIcons from "./SocialIcons";
 import { MdWifiCalling2 } from "react-icons/md";
 
-export default function MobileMenu() {
+export default function MobileMenu({ onCloseMenu }) {
   return (
-    <section className="fixed  top-0 left-0 w-full h-full showme z-10 bg-slate-800/50">
-      <div
-        id="backdrop"
-        className="w-3/4 flex flex-col overflow-hidden h-full bg-white">
+    <section
+      id="backdrop"
+      onClick={onCloseMenu}
+      className="fixed top-0 left-0 w-full h-full showme z-10 bg-slate-800/50">
+      <div className="w-3/4 flex flex-col overflow-hidden h-full bg-white">
         <ul className="mt-20 *:pl-4  *:text-[14px] text-slate-600 *:font-poppins-regular">
           <li>
             <Link className="block pb-6 w-full" to="/find-your-job">
