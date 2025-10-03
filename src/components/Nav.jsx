@@ -1,9 +1,31 @@
-import { IoMenuOutline } from "react-icons/io5";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { MdWifiCalling2 } from "react-icons/md";
 import logoImg from "../assets/logo.png";
 import { Link } from "react-router";
 import MobileMenu from "./mobileMenu";
+import { useState } from "react";
 export default function Nav() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const openMenuHandler = () => {
+    setOpenMenu(prevState => !prevState);
+  };
+
+  const menuIconHandler = () => {
+    const classes = "text-2xl cursor-pointer lg:hidden";
+    if (openMenu) {
+      return <IoCloseOutline onClick={openMenuHandler} className={classes} />;
+    } else {
+      return <IoMenuOutline onClick={openMenuHandler} className={classes} />;
+    }
+  };
+
+  const closeMenuHandler = e => {
+    if (e.target.id === "backdrop") {
+      setOpenMenu(false);
+    }
+  };
+
   return (
     <>
       <div className="w-full bg-white fixed z-20 top-0">
@@ -11,7 +33,7 @@ export default function Nav() {
           <nav className="grid grid-cols-5">
             {/* logo section */}
             <div className="col-span-full md:col-span-2 lg:col-span-1 flex items-center relative p-3">
-              <IoMenuOutline className="text-2xl cursor-pointer lg:hidden" />
+              {menuIconHandler()}
               <Link
                 className="absolute left-1/2 transform -translate-x-1/2"
                 to="/">
@@ -52,7 +74,7 @@ export default function Nav() {
           </nav>
         </section>
       </div>
-      <MobileMenu />
+      {openMenu && <MobileMenu onCloseMenu={closeMenuHandler} />}
     </>
   );
 }
