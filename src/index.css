@@ -2,15 +2,15 @@
 
 @font-face {
   font-family: "poppins-extraLight";
-  src: url("/public/fonts/poppins/Poppins-ExtraLight.ttf");
+  src: url("/fonts/poppins/Poppins-ExtraLight.ttf");
 }
 @font-face {
   font-family: "poppins-regular";
-  src: url("/public/fonts/poppins/Poppins-Regular.ttf");
+  src: url("/fonts/poppins/Poppins-Regular.ttf");
 }
 @font-face {
   font-family: "poppins-bold";
-  src: url("/public/fonts/poppins/Poppins-Bold.ttf");
+  src: url("/fonts/poppins/Poppins-Bold.ttf");
 }
 
 @theme {
@@ -43,5 +43,10 @@
     &:hover::after {
       width: 100%;
     }
+  }
+  .bg-findjob {
+    background: url("../src/assets/sigmund-G42GU36Z.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
