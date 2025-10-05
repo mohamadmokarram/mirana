@@ -8,8 +8,12 @@ export default function Footer() {
     <footer className="pb-4 container">
       <div className="px-4">
         <ul className="flex border-b border-slate-200 *:text-[16px] justify-center md:justify-start gap-4 font-poppins-regular py-4">
-          <Link to="/about-us">About</Link>
-          <Link to="/jobs">Careers</Link>
+          <Link className="py-4" to="/about-us">
+            About
+          </Link>
+          <Link className="py-4" to="/jobs">
+            Careers
+          </Link>
         </ul>
 
         <div className="flex flex-col md:flex-row md:justify-between md:items-center">
