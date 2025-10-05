@@ -10,8 +10,9 @@ import {
 import { SiHyperskill as SkillsIcon } from "react-icons/si";
 import { RiInboxUnarchiveLine as InboxIcon } from "react-icons/ri";
 import { IoChatboxEllipsesOutline as MeetIcon } from "react-icons/io5";
-
+import Footer from "../components/Footer.jsx";
 import { Link } from "react-router";
+import Feature from "../utils/feature.jsx";
 
 function FindJobPage() {
   return (
@@ -60,7 +61,7 @@ function FindJobPage() {
         </div>
       </header>
 
-      <main className="py-12 font-poppins-regular">
+      <main className="py-20 font-poppins-regular border-b border-slate-200">
         <div className="container">
           <h2 className="text-center text-slate-600 text-4xl md:text-6xl">
             What happens
@@ -70,59 +71,46 @@ function FindJobPage() {
           </p>
 
           <section className="grid md:grid-cols-3 gap-[3px] max-w-[992px] mx-auto">
-            <div className="bg-slate-100 p-6">
-              <SearchJobIcon className="text-5xl" />
-              <h2 className="text-2xl">Search for a job</h2>
-              <p className="mt-8 text-[14px] h-fit">
-                Search through all the jobs across various job types &
-                industries.
-              </p>
-            </div>
-            <div className="bg-slate-100 p-6">
-              <SkillsIcon className="text-5xl" />
-              <h2 className="text-2xl">Match your skills</h2>
-              <p className="mt-8 text-[14px] h-fit">
-                Read through the description to see if your skills and
-                experiences are a match.
-              </p>
-            </div>
-            <div className="bg-slate-100 p-6">
-              <ClickIcon className="text-5xl" />
-              <h2 className="text-2xl">Click “apply”</h2>
-              <p className="mt-8 text-[14px] h-fit">
-                Apply to as many jobs as you think are suitable for you. Submit
-                your contact & resume.
-              </p>
-            </div>
-
-            <div className="bg-slate-100 p-6">
-              <InboxIcon className="text-5xl" />
-              <h2 className="text-2xl">Check your inbox</h2>
-              <p className="mt-8 text-[14px] h-fit">
-                We will email you if your resume was short-listed & we’ll call
+            <Feature
+              icon={SearchJobIcon}
+              title="Search for a job"
+              desc="Search through all the jobs across various job types &
+                industries."
+            />
+            <Feature
+              icon={SkillsIcon}
+              title="Match your skills"
+              desc="Read through the description to see if your skills and
+                experiences are a match.."
+            />
+            <Feature
+              icon={ClickIcon}
+              title="Click “apply”"
+              desc="Apply to as many jobs as you think are suitable for you. Submit
+                your contact & resume."
+            />
+            <Feature
+              icon={InboxIcon}
+              title="Check your inbox"
+              desc="We will email you if your resume was short-listed & we’ll call
                 you for the next step. If non happened, don’t worry. We have you
-                well sited in our talent pool.
-              </p>
-            </div>
-            <div className="bg-slate-100 p-6">
-              <MeetIcon className="text-5xl" />
-              <h2 className="text-2xl">Get hired</h2>
-              <p className="mt-8 text-[14px] h-fit">
-                After our chat, we will introduce you to the employer and you
-                will be assessed in their internal hiring process.
-              </p>
-            </div>
-            <div className="bg-slate-100 p-6">
-              <HireIcon className="text-5xl" />
-              <h2 className="text-2xl">Click “apply”</h2>
-              <p className="mt-8 text-[14px] h-fit">
-                After the interview process, you’ll find out shortly if you’ve
-                been hired.
-              </p>
-            </div>
+                well sited in our talent pool."
+            />
+            <Feature
+              icon={MeetIcon}
+              title="Meet & interview"
+              desc=" After our chat, we will introduce you to the employer and you will be assessed in their internal hiring process. "
+            />
+            <Feature
+              icon={HireIcon}
+              title="Get hired"
+              desc=" After the interview process, you’ll find out shortly if you’ve been hired."
+            />
           </section>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
