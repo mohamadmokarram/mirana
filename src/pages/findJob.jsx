@@ -2,6 +2,15 @@ import Nav from "../components/Nav";
 import { LuUserRoundSearch } from "react-icons/lu";
 import { FaArrowRight } from "react-icons/fa6";
 import { AiOutlineUpload } from "react-icons/ai";
+import {
+  MdOutlineAdsClick as ClickIcon,
+  MdOutlineHandshake as HireIcon,
+  MdOutlineManageSearch as SearchJobIcon,
+} from "react-icons/md";
+import { SiHyperskill as SkillsIcon } from "react-icons/si";
+import { RiInboxUnarchiveLine as InboxIcon } from "react-icons/ri";
+import { IoChatboxEllipsesOutline as MeetIcon } from "react-icons/io5";
+
 import { Link } from "react-router";
 
 function FindJobPage() {
@@ -28,7 +37,7 @@ function FindJobPage() {
               </h2>
               <Link
                 to="/jobs"
-                className="w-3/5 text-white bg-secondary mx-auto  font-poppins-bold py-2 px-3 my-4 flex justify-center items-center gap-2">
+                className="w-fit lg:w-3/5 text-white bg-secondary mx-auto  font-poppins-bold py-2 px-3 my-4 flex justify-center items-center gap-2">
                 <span>Search Jobs</span>
                 <FaArrowRight />
               </Link>
@@ -42,7 +51,7 @@ function FindJobPage() {
                 {" "}
                 Upload your resume{" "}
               </h2>
-              <Link className="w-3/5 text-white bg-secondary mx-auto  font-poppins-bold py-2 px-3 my-4 flex justify-center items-center gap-2">
+              <Link className="w-fit lg:w-3/5 text-white bg-secondary mx-auto  font-poppins-bold py-2 px-3 my-4 flex justify-center items-center gap-2">
                 <span>Upload</span>
                 <FaArrowRight />
               </Link>
@@ -50,6 +59,70 @@ function FindJobPage() {
           </section>
         </div>
       </header>
+
+      <main className="py-12 font-poppins-regular">
+        <div className="container">
+          <h2 className="text-center text-slate-600 text-4xl md:text-6xl">
+            What happens
+          </h2>
+          <p className="w-4/5 mx-auto py-6 text-center font-poppins-bold lg:font-poppins-extraLight lg:text-3xl text-slate-800">
+            We are next to you, throughout the entire process
+          </p>
+
+          <section className="grid md:grid-cols-3 gap-[3px] max-w-[992px] mx-auto">
+            <div className="bg-slate-100 p-6">
+              <SearchJobIcon className="text-5xl" />
+              <h2 className="text-2xl">Search for a job</h2>
+              <p className="mt-8 text-[14px] h-fit">
+                Search through all the jobs across various job types &
+                industries.
+              </p>
+            </div>
+            <div className="bg-slate-100 p-6">
+              <SkillsIcon className="text-5xl" />
+              <h2 className="text-2xl">Match your skills</h2>
+              <p className="mt-8 text-[14px] h-fit">
+                Read through the description to see if your skills and
+                experiences are a match.
+              </p>
+            </div>
+            <div className="bg-slate-100 p-6">
+              <ClickIcon className="text-5xl" />
+              <h2 className="text-2xl">Click “apply”</h2>
+              <p className="mt-8 text-[14px] h-fit">
+                Apply to as many jobs as you think are suitable for you. Submit
+                your contact & resume.
+              </p>
+            </div>
+
+            <div className="bg-slate-100 p-6">
+              <InboxIcon className="text-5xl" />
+              <h2 className="text-2xl">Check your inbox</h2>
+              <p className="mt-8 text-[14px] h-fit">
+                We will email you if your resume was short-listed & we’ll call
+                you for the next step. If non happened, don’t worry. We have you
+                well sited in our talent pool.
+              </p>
+            </div>
+            <div className="bg-slate-100 p-6">
+              <MeetIcon className="text-5xl" />
+              <h2 className="text-2xl">Get hired</h2>
+              <p className="mt-8 text-[14px] h-fit">
+                After our chat, we will introduce you to the employer and you
+                will be assessed in their internal hiring process.
+              </p>
+            </div>
+            <div className="bg-slate-100 p-6">
+              <HireIcon className="text-5xl" />
+              <h2 className="text-2xl">Click “apply”</h2>
+              <p className="mt-8 text-[14px] h-fit">
+                After the interview process, you’ll find out shortly if you’ve
+                been hired.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
     </>
   );
 }
