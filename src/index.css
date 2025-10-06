@@ -49,4 +49,9 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .bg-findHire {
+    background: url("../src/assets/timon-studler-C4KNMGZ7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
