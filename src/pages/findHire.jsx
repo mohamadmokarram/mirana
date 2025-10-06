@@ -1,10 +1,15 @@
+import Header from "../components/header";
 import Nav from "../components/Nav";
 
 function FindHirePage() {
   return (
     <>
       <Nav />
-      <h1 className="text-center mt-8">find your hire</h1>;
+      <Header classes={`bg-findHire`}>
+        <h1 className="font-poppins-bold mt-6 text-white md:mt-12 mb-2 font-semibold text-[40px] md:text-8xl text-center">
+          Meet your next colleagues
+        </h1>
+      </Header>
     </>
   );
 }
