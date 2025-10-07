@@ -14,6 +14,8 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router";
 import Feature from "../utils/feature.jsx";
 import Header from "../components/header.jsx";
+import Main from "../components/Main-content.jsx";
+import GridSection from "../components/Grid-section.jsx";
 
 function FindJobPage() {
   return (
@@ -48,8 +50,7 @@ function FindJobPage() {
               <AiOutlineUpload className="text-4xl" />
             </div>
             <h2 className="text-center font-poppins-regular text-slate-600 text-xl">
-              {" "}
-              Upload your resume{" "}
+              Upload your resume
             </h2>
             <Link className="w-fit lg:w-3/5 text-white bg-secondary mx-auto  font-poppins-bold py-2 px-3 my-4 flex justify-center items-center gap-2">
               <span>Upload</span>
@@ -59,54 +60,48 @@ function FindJobPage() {
         </section>
       </Header>
 
-      <main className="py-20 font-poppins-regular border-b border-slate-200">
-        <div className="container">
-          <h2 className="text-center text-slate-600 text-4xl md:text-6xl">
-            What happens
-          </h2>
-          <p className="w-4/5 mx-auto py-6 text-center font-poppins-bold lg:font-poppins-extraLight lg:text-3xl text-slate-800">
-            We are next to you, throughout the entire process
-          </p>
-
-          <section className="grid md:grid-cols-3 gap-[3px] max-w-[992px] mx-auto">
-            <Feature
-              icon={SearchJobIcon}
-              title="Search for a job"
-              desc="Search through all the jobs across various job types &
+      <Main title="What happens" titleColor="text-slate-600">
+        <p className="w-4/5 mx-auto py-6 text-center font-poppins-bold lg:font-poppins-extraLight lg:text-3xl text-slate-800">
+          We are next to you, throughout the entire process
+        </p>
+        <GridSection>
+          <Feature
+            icon={SearchJobIcon}
+            title="Search for a job"
+            desc="Search through all the jobs across various job types &
                 industries."
-            />
-            <Feature
-              icon={SkillsIcon}
-              title="Match your skills"
-              desc="Read through the description to see if your skills and
+          />
+          <Feature
+            icon={SkillsIcon}
+            title="Match your skills"
+            desc="Read through the description to see if your skills and
                 experiences are a match.."
-            />
-            <Feature
-              icon={ClickIcon}
-              title="Click “apply”"
-              desc="Apply to as many jobs as you think are suitable for you. Submit
+          />
+          <Feature
+            icon={ClickIcon}
+            title="Click “apply”"
+            desc="Apply to as many jobs as you think are suitable for you. Submit
                 your contact & resume."
-            />
-            <Feature
-              icon={InboxIcon}
-              title="Check your inbox"
-              desc="We will email you if your resume was short-listed & we’ll call
+          />
+          <Feature
+            icon={InboxIcon}
+            title="Check your inbox"
+            desc="We will email you if your resume was short-listed & we’ll call
                 you for the next step. If non happened, don’t worry. We have you
                 well sited in our talent pool."
-            />
-            <Feature
-              icon={MeetIcon}
-              title="Meet & interview"
-              desc=" After our chat, we will introduce you to the employer and you will be assessed in their internal hiring process. "
-            />
-            <Feature
-              icon={HireIcon}
-              title="Get hired"
-              desc=" After the interview process, you’ll find out shortly if you’ve been hired."
-            />
-          </section>
-        </div>
-      </main>
+          />
+          <Feature
+            icon={MeetIcon}
+            title="Meet & interview"
+            desc=" After our chat, we will introduce you to the employer and you will be assessed in their internal hiring process. "
+          />
+          <Feature
+            icon={HireIcon}
+            title="Get hired"
+            desc=" After the interview process, you’ll find out shortly if you’ve been hired."
+          />
+        </GridSection>
+      </Main>
 
       <Footer />
     </>
