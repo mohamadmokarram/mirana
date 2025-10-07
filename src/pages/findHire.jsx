@@ -12,7 +12,7 @@ function FindHirePage() {
           Meet your next colleagues
         </h1>
 
-        <form className="bg-white mx-4 md:p-8 md:mx-0 font-poppins-regular mt-8">
+        <form className="max-w-[992px] md:mx-auto bg-white mx-4 md:p-8 md:mx-0 font-poppins-regular mt-8">
           <h2 className="w-full p-3 text-2xl md:text-4xl">Contact us</h2>
           <p className="text-[14px] pl-3 flex gap-1 items-center overflow-hidden">
             <span className="text-red-500">*</span>
