@@ -1,6 +1,6 @@
 import Nav from "../components/Nav";
 import moonIng from "../assets/full-moon.png";
-import Title from "../components/Title";
+import Title from "../components/about-us/Title";
 import Footer from "../components/Footer";
 
 function AboutUsPage() {

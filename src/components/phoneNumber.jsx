@@ -1,6 +1,7 @@
-import React, { useState, useCallback } from "react";
+import { useEffect } from "react";
+import { useState, useCallback } from "react";
 
-const AdvancedPhoneInput = ({ title, classes, id, name }) => {
+const AdvancedPhoneInput = ({ title, classes, id, name, onValidChange }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [error, setError] = useState("");
   const [touched, setTouched] = useState(false);
@@ -38,7 +39,7 @@ const AdvancedPhoneInput = ({ title, classes, id, name }) => {
 
   const handleBlur = () => {
     setTouched(true);
-    setError(validate(phoneNumber));
+    setError(validate(phoneNumber)); //put message into error state
   };
 
   const handleFocus = () => {
@@ -48,6 +49,12 @@ const AdvancedPhoneInput = ({ title, classes, id, name }) => {
   };
 
   const isValid = !error && phoneNumber.length === 11;
+
+  useEffect(() => {
+    // console.log("onValidChange runed");
+    // console.log("isValid: ", isValid);
+    onValidChange(isValid, phoneNumber);
+  }, [isValid, onValidChange, phoneNumber]);
 
   return (
     <div className={`flex flex-col my-6 px-6 pd:mx-0 ${classes}`}>
