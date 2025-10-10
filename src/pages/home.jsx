@@ -1,3 +1,4 @@
+import FeaturedJobs from "../components/Featured-jobs";
 import FindNext from "../components/FindNext";
 import Footer from "../components/Footer";
 import HomeHeader from "../components/homeHeader";
@@ -14,6 +15,7 @@ function HomePage() {
       </section>
       <NextCurve />
       <Partners />
+      <FeaturedJobs />
       <FindNext />
       <Footer />
     </>

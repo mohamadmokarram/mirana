@@ -1,7 +1,7 @@
 import Form from "../components/Form";
-import GridSection from "../components/Grid-section";
+import GridSection from "../components/mainContent/Grid-section";
 import Header from "../components/header";
-import Main from "../components/Main-content";
+import Main from "../components/mainContent/Main-content.jsx";
 import Nav from "../components/Nav";
 import Feature from "../utils/feature";
 import { FaUserFriends as friendIcon } from "react-icons/fa";
