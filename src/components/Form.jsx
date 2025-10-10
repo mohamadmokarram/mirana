@@ -82,6 +82,13 @@ export default function Form() {
         />
         <Input
           classes="md:w-1/2"
+          title="Company Name"
+          type="text"
+          name="companyName"
+          required
+        />
+        <Input
+          classes="md:w-1/2"
           title="Job Title"
           type="text"
           name="jobTitle"
@@ -91,8 +98,14 @@ export default function Form() {
         <AdvancedPhoneInput
           title="Phone Number"
           name="phoneNumber"
-          classes="md:w-1/2"
+          classes="w-full"
           onValidChange={handlePhoneValidChange}
+        />
+        <Input
+          classes="w-full"
+          title="Company Website"
+          name="companyWebsite"
+          placeholder="www.yourcompany.com"
         />
         <Input
           textArea

@@ -63,7 +63,7 @@ const AdvancedPhoneInput = ({ title, classes, id, name, onValidChange }) => {
         <span className="text-red-600 ml-1">*</span>
       </label>
       <input
-        type="text"
+        type="tel"
         value={phoneNumber}
         onChange={handleChange}
         onBlur={handleBlur}
