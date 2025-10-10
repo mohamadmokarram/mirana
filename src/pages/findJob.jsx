@@ -14,8 +14,8 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router";
 import Feature from "../utils/feature.jsx";
 import Header from "../components/header.jsx";
-import Main from "../components/Main-content.jsx";
-import GridSection from "../components/Grid-section.jsx";
+import Main from "../components/mainContent/Main-content.jsx";
+import GridSection from "../components/mainContent/Grid-section.jsx";
 
 function FindJobPage() {
   return (
