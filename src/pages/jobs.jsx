@@ -4,8 +4,11 @@ import { Link } from "react-router";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from "../components/Footer";
 import Select from "../components/Select";
+import { useSelector } from "react-redux";
 
 function Jobspage() {
+  const jobs = useSelector(state => state.jobs.jobs);
+
   return (
     <>
       <Nav />
@@ -15,16 +18,16 @@ function Jobspage() {
           options={[
             { value: "tehran", label: "tehran" },
             { value: "Qom", label: "Qom" },
-            { value: "Ahvaz", label: "Ahvaz" },
-            { value: "Shiraz", label: "Shiraz" },
+            { value: "ahvaz", label: "Ahvaz" },
+            { value: "shiraz", label: "Shiraz" },
           ]}
         />
         <h2 className="font-poppins-regular text-xl text-slate-600 mb-4">
-          {JOBLIST.length} results
+          {jobs.length} results
         </h2>
 
         <div className="grid md:grid-cols-3 gap-4">
-          {JOBLIST.map(job => (
+          {jobs.map(job => (
             <Link
               className="col-span-3 md:col-span-1"
               to={`/jobs/${job.id}`}
