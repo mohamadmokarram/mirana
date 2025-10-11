@@ -1,32 +1,36 @@
 import { useState } from "react";
+import { CiSearch as SearchIcon } from "react-icons/ci";
+import { jobsActions } from "../store/jobsSlice";
+import { useDispatch } from "react-redux";
+import { useRef } from "react";
 
-/**
- * Select component that renders a select element styled like the Input component.
- * @param {Object} props
- * @param {Array<{value: string, label: string}>} props.options - Options to display in the select dropdown.
- * @param {string} [props.value] - The current selected value.
- * @param {function} [props.onChange] - Change handler function.
- * @param {string} [props.name] - Name attribute for the select element.
- * @param {string} [props.id] - Id attribute for the select element.
- * @param {string} [props.className] - Additional class names to apply.
- * @returns JSX.Element
- */
 const Select = ({ options, name, id, className = "" }) => {
-  const [city, setCity] = useState("All");
+  const [city, setCity] = useState("");
+  const inputRef = useRef(null);
+  const dispatch = useDispatch();
 
   const handleCityChange = e => {
     setCity(e.target.value);
+    if (e.target.value === "") {
+      dispatch(jobsActions.filter({ city: inputRef.current.value }));
+      return;
+    }
+  };
+
+  const handleSearchClicks = () => {
+    dispatch(jobsActions.filter({ city: inputRef.current.value }));
   };
 
   return (
     <>
       <h2 className="font-poppins-regular text-slate-600 my-3">location</h2>
-      <div className="w-full md:w-1/2 flex items-center mb-4">
+      <div className="w-full md:w-1/2 flex items-center  mb-4">
         <select
+          ref={inputRef}
           id={id}
+          onChange={handleCityChange}
           name={name}
           value={city}
-          onChange={handleCityChange}
           className={`w-3/4 py-4 bg-gray-100 border-b border-gray-400 px-2 ${className} w-1/2`}>
           <option key="all" value="">
             All
@@ -37,8 +41,11 @@ const Select = ({ options, name, id, className = "" }) => {
             </option>
           ))}
         </select>
-        <button className="bg-secondary text-white py-2 px-4 ml-2 rounded cursor-pointer">
+        <button
+          onClick={handleSearchClicks}
+          className="flex gap-2 items-center bg-secondary text-white py-3 px-4 ml-2 rounded cursor-pointer">
           Search
+          <SearchIcon className="text-xl" />
         </button>
       </div>
     </>
