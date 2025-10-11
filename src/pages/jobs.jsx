@@ -3,12 +3,22 @@ import JOBLIST from "../data/jobs";
 import { Link } from "react-router";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from "../components/Footer";
+import Select from "../components/Select";
 
 function Jobspage() {
   return (
     <>
       <Nav />
       <section className="container mt-18 px-4 md:px-0 mb-18">
+        <Select
+          value="city"
+          options={[
+            { value: "tehran", label: "tehran" },
+            { value: "Qom", label: "Qom" },
+            { value: "Ahvaz", label: "Ahvaz" },
+            { value: "Shiraz", label: "Shiraz" },
+          ]}
+        />
         <h2 className="font-poppins-regular text-xl text-slate-600 mb-4">
           {JOBLIST.length} results
         </h2>
