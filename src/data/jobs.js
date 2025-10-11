@@ -2,7 +2,7 @@ const JOBLIST = [
   {
     id: 1,
     position: " HR Manager ",
-    city: "tehran",
+    city: "ahvaz",
     category: "HR",
     industry: "Iranian Company in OTA Industry",
     postDate: "Posted: Sep 15, 2025",
@@ -68,7 +68,7 @@ const JOBLIST = [
   {
     id: 3,
     position: " Chief Marketing Officer ",
-    city: "tehran",
+    city: "shiraz",
     category: "Marketing",
     industry: "Iranian Company in E-Commerce Industry",
     postDate: "Posted: Sep 2, 2025",
@@ -166,7 +166,7 @@ const JOBLIST = [
   {
     id: 6,
     position: "Data Analyst",
-    city: "tehran",
+    city: "ahvaz",
     category: "Product",
     industry: "Iranian Company in Tech Industry",
     postDate: "Posted: Aug 16, 2025",
