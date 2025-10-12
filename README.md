@@ -2,15 +2,25 @@
 
 A React-based frontend simulation of [Mirana.ir](https://mirana.ir/), a leading Iranian job recruitment platform with the tagline "We make recruitment happen". This project replicates the core functionality and UI of Mirana's job search platform with modern web technologies.
 
-##  ✨ Key Features
+<img src="./src/assets/landing-img.png" />
+
+## ✨ Key Features
+
 - **Tailwind CSS** for responsive, utility-first styling
 - **Redux Toolkit** for efficient state management
 - Job listing display with filtering capabilities
 - Responsive design matching Mirana's layout
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Developed by Mohamad Mokaram
 
-## Expanding the ESLint configuration
+- Created - 2025-10-12
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Technologies Used
+
+- Reactjs, **React-Router**, **Redux-toolkit**, Tailwindcss
+
+- Role - Frontend
+
+### How to reach me
+
+- [linkedin](https://www.linkedin.com/in/mohamad-mokaram-05b873200/), [instagram](https://www.instagram.com/mokaram_frontdeveloper/)
