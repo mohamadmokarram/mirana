@@ -25,7 +25,7 @@ export default function NextCurve() {
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
                 <img
-                  src="/src/assets/bottle.png"
+                  src="../src/assets/bottle.png"
                   className="scale-150"
                   alt="job"
                 />
@@ -38,7 +38,7 @@ export default function NextCurve() {
             <div className="w-1/3 flex flex-col justify-start gap-4  items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
                 <img
-                  src="/src/assets/telephone.png"
+                  src="../src/assets/telephone.png"
                   className="scale-110"
                   alt="job"
                 />
@@ -51,7 +51,7 @@ export default function NextCurve() {
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden ">
                 <img
-                  src="/src/assets/chairs.png"
+                  src="../src/assets/chairs.png"
                   className="scale-110"
                   alt="job"
                 />
@@ -84,7 +84,7 @@ export default function NextCurve() {
             {/* first */}
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
-                <img src="/src/assets/share.png" alt="job" />
+                <img src="../src/assets/share.png" alt="job" />
               </figure>
               <p className="font-poppins-regular text-[14px] px-2 text-center">
                 Share your vacancies with us
@@ -94,7 +94,7 @@ export default function NextCurve() {
             <div className="w-1/3 flex flex-col justify-start gap-4  items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
                 <img
-                  src="/src/assets/puzzle.png"
+                  src="../src/assets/puzzle.png"
                   className="scale-110"
                   alt="job"
                 />
@@ -107,7 +107,7 @@ export default function NextCurve() {
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden ">
                 <img
-                  src="/src/assets/handy.png"
+                  src="../src/assets/handy.png"
                   className="scale-110"
                   alt="job"
                 />
