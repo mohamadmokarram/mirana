@@ -1,5 +1,11 @@
 import { Link } from "react-router";
 import { FaArrowRight } from "react-icons/fa6";
+import bottleImg from "../assets/bottle.png";
+import telImg from "../assets/telephone.png";
+import chairImg from "../assets/chairs.png";
+import shareImg from "../assets/share.png";
+import puzzleImg from "../assets/puzzle.png";
+import handyImg from "../assets/handy.png";
 
 export default function NextCurve() {
   return (
@@ -24,11 +30,7 @@ export default function NextCurve() {
             {/* first */}
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
-                <img
-                  src="../src/assets/bottle.png"
-                  className="scale-150"
-                  alt="job"
-                />
+                <img src={bottleImg} className="scale-150" alt="job" />
               </figure>
               <p className="font-poppins-regular text-[14px] px-2 text-center">
                 let us know you are looking
@@ -37,11 +39,7 @@ export default function NextCurve() {
             {/* second */}
             <div className="w-1/3 flex flex-col justify-start gap-4  items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
-                <img
-                  src="../src/assets/telephone.png"
-                  className="scale-110"
-                  alt="job"
-                />
+                <img src={telImg} className="scale-110" alt="job" />
               </figure>
               <p className="font-poppins-regular px-2 text-[14px] text-center">
                 We’ll get in touch & get to know you
@@ -50,11 +48,7 @@ export default function NextCurve() {
             {/* third */}
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden ">
-                <img
-                  src="../src/assets/chairs.png"
-                  className="scale-110"
-                  alt="job"
-                />
+                <img src={chairImg} className="scale-110" alt="job" />
               </figure>
               <p className="font-poppins-regular px-2 text-center">
                 Interview and get hired
@@ -84,7 +78,7 @@ export default function NextCurve() {
             {/* first */}
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
-                <img src="../src/assets/share.png" alt="job" />
+                <img src={shareImg} alt="job" />
               </figure>
               <p className="font-poppins-regular text-[14px] px-2 text-center">
                 Share your vacancies with us
@@ -93,11 +87,7 @@ export default function NextCurve() {
             {/* second */}
             <div className="w-1/3 flex flex-col justify-start gap-4  items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden">
-                <img
-                  src="../src/assets/puzzle.png"
-                  className="scale-110"
-                  alt="job"
-                />
+                <img src={puzzleImg} className="scale-110" alt="job" />
               </figure>
               <p className="font-poppins-regular px-2 text-[14px] text-center">
                 We’ll find suitable candidates
@@ -106,11 +96,7 @@ export default function NextCurve() {
             {/* third */}
             <div className="w-1/3 flex flex-col gap-4 justify-start items-center">
               <figure className="flex justify-center p-2 w-[200px] h-[145px] overflow-hidden ">
-                <img
-                  src="../src/assets/handy.png"
-                  className="scale-110"
-                  alt="job"
-                />
+                <img src={handyImg} className="scale-110" alt="job" />
               </figure>
               <p className="font-poppins-regular px-2 text-center">
                 Assess and hire{" "}
