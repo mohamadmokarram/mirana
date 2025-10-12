@@ -2,7 +2,7 @@ import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { MdWifiCalling2 } from "react-icons/md";
 import logoImg from "../assets/logo.png";
 import { Link } from "react-router";
-import MobileMenu from "./mobileMenu";
+import MobileMenu from "./MobileMenu.jsx";
 import { useState } from "react";
 export default function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
