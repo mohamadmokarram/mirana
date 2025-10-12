@@ -4,6 +4,10 @@ A React-based frontend simulation of [Mirana.ir](https://mirana.ir/), a leading 
 
 <img src="./src/assets/landing-img.png" />
 
+<a href="https://saedinia.netlify.app/" target="_blank" >
+  <img src="https://img.shields.io/badge/demo-%20View%20Demo%20-blue.svg?style=for-the-badge&logo=github" alt="View Demo">
+</a>
+
 ## ✨ Key Features
 
 - **Tailwind CSS** for responsive, utility-first styling
