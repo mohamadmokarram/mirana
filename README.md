@@ -1,8 +1,12 @@
-# React + Vite
+# Mirana Recruitment Platform Simulation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based frontend simulation of [Mirana.ir](https://mirana.ir/), a leading Iranian job recruitment platform with the tagline "We make recruitment happen". This project replicates the core functionality and UI of Mirana's job search platform with modern web technologies.
 
-Currently, two official plugins are available:
+##  ✨ Key Features
+- **Tailwind CSS** for responsive, utility-first styling
+- **Redux Toolkit** for efficient state management
+- Job listing display with filtering capabilities
+- Responsive design matching Mirana's layout
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
