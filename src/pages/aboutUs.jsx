@@ -1,16 +1,17 @@
 import Nav from "../components/Nav";
-import moonIng from "../assets/full-moon.png";
+import moonImg from "../assets/full-moon.png";
 import Title from "../components/about-us/Title";
 import Footer from "../components/Footer";
 
 function AboutUsPage() {
   return (
     <>
+      <link rel="preload" as="image" href={moonImg} />
       <Nav />
       <section className="bg-black mt-12">
         <div className="container lg:max-w-[1024px] overflow-hidden">
           <div className="flex justify-center">
-            <img src={moonIng} alt="about-us" />
+            <img src={moonImg} alt="about-us" />
           </div>
 
           <Title title="about us" />

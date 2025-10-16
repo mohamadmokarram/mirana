@@ -16,10 +16,12 @@ import Feature from "../utils/feature.jsx";
 import Header from "../components/header.jsx";
 import Main from "../components/mainContent/Main-content.jsx";
 import GridSection from "../components/mainContent/Grid-section.jsx";
+import findJobHeaderImg from "../assets/sigmund-G42GU36Z.png";
 
 function FindJobPage() {
   return (
     <>
+      <link rel="preload" as="image" href={findJobHeaderImg} />
       <Nav />
       <Header classes={`bg-findjob min-h-[90vh]`}>
         <h1 className="font-poppins-bold mt-6 text-secondary md:mt-12 mb-2 font-semibold text-[40px] md:text-8xl text-center">

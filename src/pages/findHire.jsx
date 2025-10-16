@@ -15,10 +15,12 @@ import {
 } from "react-icons/md";
 import { LiaHireAHelper as hireIcon } from "react-icons/lia";
 import Footer from "../components/Footer";
+import findHireHeaderImg from "../assets/timon-studler-C4KNMGZ7.png";
 
 function FindHirePage() {
   return (
     <>
+      <link rel="preload" as="image" href={findHireHeaderImg} />
       <Nav />
       <Header classes={`bg-findHire pb-10`}>
         <h1 className="font-poppins-bold mt-6 text-white md:mt-12 mb-2 font-semibold text-[40px] md:text-8xl text-center">
